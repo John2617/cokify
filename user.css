@@ -1,0 +1,173 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and main container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    transition: background 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+/* User Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.dashboard-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+/* Recipe Cards */
+.recipe-card {
+    background-color: #fff;
+    width: 300px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    animation: slideUp 0.5s ease-out;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Recipe Image */
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Recipe Info */
+.recipe-info {
+    padding: 15px;
+}
+
+.recipe-info h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.recipe-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buttons (like, save, comment) */
+.button {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Like Button */
+.button.like {
+    background-color: #ff6f61;
+}
+
+.button.like:hover {
+    background-color: #ff3b2d;
+}
+
+/* Save Button */
+.button.save {
+    background-color: #4caf50;
+}
+
+.button.save:hover {
+    background-color: #388e3c;
+}
+
+/* Comment Button */
+.button.comment {
+    background-color: #03a9f4;
+}
+
+.button.comment:hover {
+    background-color: #0288d1;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .recipe-card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
