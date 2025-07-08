@@ -39,4 +39,3 @@
 Thank You !
 
 
-    └── cookify_schema.sql # SQL file for tables creation
