@@ -9,14 +9,16 @@
 👨‍🍳 **Chef Dashboard**  
 - Login/Register as Chef  
 - Post recipes with image, ingredients, and step-by-step instructions  
-- View and manage own recipe posts  
+- View and manage own recipe posts
+  
 
 👤 **User Dashboard**  
 - Login/Register as User  
 - View all chef recipes  
 - Like, Save, and Comment on recipes  
 - View saved recipes  
-- Unique user profile with activity history  
+- Unique user profile with activity history
+- Search Bar To Search Recipes
 
 📢 **Common**  
 - Multi-authentication (User/Chef)  
